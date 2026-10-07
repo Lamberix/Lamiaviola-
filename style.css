@@ -1,0 +1,125 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Poppins,sans-serif;
+background:#fff8f3;
+color:#333;
+overflow-x:hidden;
+}
+
+.hero{
+height:100vh;
+background:url("images/hero.jpg") center center/cover;
+position:relative;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.overlay{
+position:absolute;
+inset:0;
+background:rgba(0,0,0,.45);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+max-width:800px;
+padding:20px;
+}
+
+.hero h1{
+font-family:'Cormorant Garamond';
+font-size:6rem;
+color:white;
+}
+
+.hero p{
+color:white;
+font-size:1.2rem;
+}
+
+.btn{
+display:inline-block;
+margin-top:30px;
+background:white;
+padding:15px 30px;
+border-radius:50px;
+text-decoration:none;
+color:#b84f65;
+font-weight:600;
+}
+
+.section{
+padding:100px 15%;
+text-align:center;
+}
+
+.section h2{
+font-family:'Cormorant Garamond';
+font-size:4rem;
+margin-bottom:30px;
+}
+
+.section p{
+font-size:1.2rem;
+line-height:2;
+}
+
+.gallery{
+columns:2;
+padding:50px;
+}
+
+.gallery img{
+width:100%;
+margin-bottom:20px;
+border-radius:20px;
+transition:.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.04);
+}
+
+.counter{
+padding:120px 20px;
+text-align:center;
+background:#fde9e9;
+}
+
+#days{
+font-size:6rem;
+font-weight:bold;
+color:#b84f65;
+}
+
+.letter{
+padding:120px 15%;
+text-align:center;
+}
+
+.letter h2{
+font-family:'Cormorant Garamond';
+font-size:4rem;
+margin-bottom:40px;
+}
+
+.letter p{
+font-size:1.2rem;
+line-height:2.3;
+max-width:700px;
+margin:auto;
+}
+
+.letter h3{
+margin-top:50px;
+font-size:2rem;
+color:#b84f65;
+}
