@@ -88,10 +88,28 @@ transition:.4s;
 transform:scale(1.04);
 }
 
+/* Ho sostituito il colore di sfondo con l'ultima foto (imagesphoto4.jpg)
+   e aggiunto un overlay scuro per migliorare la leggibilità del testo. */
 .counter{
 padding:120px 20px;
 text-align:center;
-background:#fde9e9;
+background: url("imagesphoto4.jpg") center center/cover no-repeat;
+position:relative;
+color: #fff;
+}
+
+.counter::before{
+content:"";
+position:absolute;
+inset:0;
+background:rgba(0,0,0,0.35);
+z-index:0;
+}
+
+/* Assicura che il contenuto interno stia sopra l'overlay */
+.counter > *{
+position:relative;
+z-index:1;
 }
 
 #days{
